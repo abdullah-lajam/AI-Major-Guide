@@ -16,6 +16,55 @@ html,body{
   min-height:100vh;
   position:relative;
  margin-bottom:40px;}
+
+@media (max-width: 600px) {
+    .slide-container {
+        width: 95% !important;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .card, .slide-container .card {
+        flex-direction: column !important;
+        min-width: unset !important;
+        max-width: 100% !important;
+        width: 90% !important;
+        margin: auto !important;
+    }
+    .slide-container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    h1, h2, h3, h4, p {
+        word-break: break-word !important;
+        font-size: 0.95em !important;
+    }
+}
+
+
+@media (max-width: 600px) {
+    /* عمّم الاتجاه عمودياً لأي Flex رئيسي */
+    .slide-container .flex, .slide-container .flex-row {
+        flex-direction: column !important;
+    }
+    /* الشبكات تصبح عمود واحد */
+    .slide-container .grid {
+        grid-template-columns: 1fr !important;
+    }
+    /* البطاقات تأخذ العرض الكامل */
+    .slide-container [class*="card"], .slide-container [class*="item"], .slide-container [class*="list"] {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin-inline: auto !important;
+    }
+    /* نص أصغر لمنع تكدس */
+    .slide-container h1 {font-size: 1.5rem !important;}
+    .slide-container h2 {font-size: 1.25rem !important;}
+    .slide-container h3 {font-size: 1.1rem !important;}
+    .slide-container p {font-size: 0.95rem !important;}
+}
+
 </style>
 <style>/* slide1.html */
 
@@ -35,7 +84,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             margin: 0 auto;
             overflow: hidden;
@@ -113,7 +163,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             position: relative;
             background-color: rgba(15, 23, 42, 0.85);
@@ -241,7 +292,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             position: relative;
             background-color: rgba(15, 23, 42, 0.85);
@@ -415,7 +467,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             position: relative;
             background-color: rgba(15, 23, 42, 0.85);
@@ -590,7 +643,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             position: relative;
             background-color: rgba(15, 23, 42, 0.85);
@@ -800,7 +854,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             position: relative;
             background-color: rgba(15, 23, 42, 0.85);
@@ -1004,7 +1059,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             position: relative;
             background-color: rgba(15, 23, 42, 0.85);
@@ -1211,7 +1267,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             position: relative;
             background-color: rgba(15, 23, 42, 0.85);
@@ -1423,7 +1480,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             position: relative;
             background-color: rgba(15, 23, 42, 0.85);
@@ -1672,7 +1730,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             position: relative;
             background-color: rgba(15, 23, 42, 0.85);
@@ -1856,7 +1915,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             position: relative;
             background-color: rgba(15, 23, 42, 0.85);
@@ -2101,7 +2161,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             position: relative;
             background-color: rgba(15, 23, 42, 0.85);
@@ -2306,7 +2367,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             position: relative;
             background-color: rgba(15, 23, 42, 0.85);
@@ -2523,7 +2585,8 @@ html,body{
         }
         
         .slide-container {
-            width: 1280px;
+            max-width: 1280px;
+    width: 90%;
             min-height: 720px;
             position: relative;
             background-color: rgba(15, 23, 42, 0.85);
